@@ -2135,6 +2135,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4103946771192094002}
+  - {fileID: 2412149675194547957}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5209,7 +5210,6 @@ RectTransform:
   - {fileID: 6348365741339516187}
   - {fileID: 2079147327973918794}
   - {fileID: 7519807005819985518}
-  - {fileID: 3068081254640952}
   m_Father: {fileID: 4103946771192094002}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6193,6 +6193,7 @@ MonoBehaviour:
   optionButton: {fileID: 960865032167010357}
   aboutButton: {fileID: 6194874377906167250}
   quitButton: {fileID: 1817432991334132475}
+  CreditsAnimation: {fileID: 9031819460167485448}
   returnButtons:
   - {fileID: 450924522200439717}
   - {fileID: 3692547202136741878}
@@ -6805,13 +6806,13 @@ MonoBehaviour:
   clickAudioName: uiclick
   hoverEnterAudioName: uihoverenter
   hoverExitAudioName: 
---- !u!1001 &31616375914779507
+--- !u!1001 &2378773422296793278
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 6079520930002376326}
+    m_TransformParent: {fileID: 8976177541110059002}
     m_Modifications:
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_Pivot.x
@@ -6851,15 +6852,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.970503
+      value: 0.84380114
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4832487
+      value: 0.42133164
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4832487
+      value: 0.42133164
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6871,7 +6872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.657477
+      value: -3.34
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6891,11 +6892,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2354.4414
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -497.4
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6922,10 +6923,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
---- !u!224 &3068081254640952 stripped
+--- !u!224 &2412149675194547957 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 34538453872901707, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
-  m_PrefabInstance: {fileID: 31616375914779507}
+  m_PrefabInstance: {fileID: 2378773422296793278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9031819460167485448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6653063638680225974, guid: 672c4f059c1d6f3419a7dce23be25225, type: 3}
+  m_PrefabInstance: {fileID: 2378773422296793278}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9216369719753160303
 PrefabInstance:

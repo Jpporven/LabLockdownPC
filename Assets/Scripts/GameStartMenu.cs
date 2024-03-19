@@ -19,6 +19,9 @@ public class GameStartMenu : MonoBehaviour
     public Button aboutButton;
     public Button quitButton;
 
+    [Header("Animation")]
+    public GameObject CreditsAnimation;
+
     public List<Button> returnButtons;
 
     public Color fadeoutColor;
@@ -34,6 +37,7 @@ public class GameStartMenu : MonoBehaviour
         //color = gameTitle.GetComponent<SpriteRenderer>();
         //gameTitle.transform.position = new Vector3(0, 2.43f, 6.71f);
         mainMenu.SetActive(false);
+        CreditsAnimation.SetActive(false);
         StartCoroutine(FadeOut());
 
         //Hook events
@@ -79,6 +83,7 @@ public class GameStartMenu : MonoBehaviour
         mainMenu.SetActive(true);
         options.SetActive(false);
         about.SetActive(false);
+        CreditsAnimation.SetActive(false);
     }
     public void EnableOption()
     {
@@ -93,6 +98,7 @@ public class GameStartMenu : MonoBehaviour
         mainMenu.SetActive(false);
         options.SetActive(false);
         about.SetActive(true);
+        CreditsAnimation.SetActive(true);
         
     }
 
