@@ -1,0 +1,414 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1076655410974671165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6831361120999800943}
+  - component: {fileID: 7191131367951632336}
+  m_Layer: 0
+  m_Name: Timer Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6831361120999800943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076655410974671165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5852534271582147715}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7191131367951632336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076655410974671165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1098c3bbeb1ac54a8d106c2a5b31f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 0}
+  startTime: 1800
+  time: 0
+  openingStartTime: 5
+  openingTime: 0
+  subtitleTriggers: {fileID: 228261589672655358}
+  openingCheck: 0
+  time20check: 0
+  time10check: 0
+  time5check: 0
+  enterLv1: 0
+  level1Clear: 0
+  timesUpCheck: 0
+--- !u!1 &4371852404225350655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3413566135932923590}
+  - component: {fileID: 8789239100565564494}
+  - component: {fileID: 228261589672655358}
+  - component: {fileID: 26978493860125840}
+  m_Layer: 5
+  m_Name: Subtitles Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3413566135932923590
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371852404225350655}
+  m_LocalRotation: {x: -0, y: 0.8433914, z: -0, w: 0.5372997}
+  m_LocalPosition: {x: 0, y: 0, z: 9.753323}
+  m_LocalScale: {x: 0.0023025316, y: 0.0023025314, z: 0.0023025316}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5852534271582147715}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.494975, y: 3.0857306}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8789239100565564494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371852404225350655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacfd6683b30bfe46b17452f135018b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentenceText: {fileID: 0}
+  textTypeSpeed: 0.05
+  sentencePause: 1
+--- !u!114 &228261589672655358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371852404225350655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174ef47dc2043b24099525e77e3dbae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 7191131367951632336}
+  flourineCheck: 0
+  chlorineCheck: 0
+  checkboth: 0
+  quickClearCheck: 1
+  missdentifiedOnceCheck: 0
+  opening:
+    sentences:
+    - 'Female Voice: Well, hello there, It seems that you were hand selected to become
+      our newest Peer Academic Leader, or as I like to call them, Pal. In order to
+      be accepted as our new Pal, we will put your chemistry knowledge to the test.
+      And I thought, what better way to test your knowledge and quick thinking skills
+      than an escape room!'
+    - "Male Voice: Alright alright I think that's enough. Let\u2019s get to the basics,
+      you\u2019ll need to escape two rooms within 30 minutes in order to pass. Ha!
+      Really, 30 minutes? I escaped in 10 minutes, but I digress.  This is a fairly
+      simple task I assure you."
+    - "Female Voice: Ahem, before we begin, you might not be too familiar with how
+      things work around here.\r"
+    - 'Male Voice: No really, I thought they were geniuses who were experts in chemistry.'
+    - "Female Voice: Anyway, Allow me to help you. Use your left joystick to move
+      around, you\u2019ll be doing that a lot around here. Tilt your head to look
+      around your surroundings, try not to trip on anything."
+    - 'Male Voice: Hehehe good luck with that.'
+    - 'Female Voice: Your right joystick lets you look around too, not as reliable
+      as moving that head of yours yea?
+
+
+      Use either the left or right triggers
+      on your controllers to grab or let go of anything within the lab rooms. Try
+      grabbing that ball and just throwing it.
+
+'
+    - 'Male Voice: Try not hitting yourself will ya.'
+    - "Female Voice: Not bad at all, you\u2019re a Pal in the making! Make your way
+      through the door when you\u2019re ready to begin!"
+  lv1Enter:
+    sentences:
+    - 'Male Voice: Welcome Lab Ra- I mean, Pal! Here in the first room, your task
+      will be to find the missing 10 elements that aren''t showing up in the periodic
+      table you see before you. There are many tools and hints that will help you
+      in solving these tasks, once you correctly identify the elements using my-
+      ahem, I mean our special machine, you bring it''s symbol to the periodic table.
+      Bring them all and you''ll move on to the second room, we''ll touch on the
+      second room when you get there. Since I feel sorry for you, we''ll guide you
+      on this works.'
+    - 'Female Voice: Let''s start with Identifying the element, Lithium. Start by
+      walking to where the clue is right over there.'
+    - 'Female Voice: Before we can properly identify the element using our clue,
+      we must turn on the Bunsen burner first. Turn the wheel at the bottom until
+      you see the Bunsen burner light up.'
+    - 'Female Voice: Good! Now, carefully use the tong and grab the Lithium mineral,
+      and place it over the fire.'
+    - 'Female Voice: Great Job! The color of the flame matches the color of the clue
+      we just saw! Now head on over to the Element Machine and let''s go get our
+      symbol.'
+    - 'Female Voice: Insert the mineral into the hole of the machine you see, and
+      then correctly push the button that represents Lithium.'
+    - 'Male Voice: Pressing the wrong button won''t do you any favors, you''ll thank
+      me later on that.'
+    - 'Female Voice: Excellent! Finally, you must put the Lithium Symbol in it''s
+      proper place on the periodic table, and then you''re done! Use the clue as
+      a guide for where it goes!'
+    - 'Male Voice: Congrats! You found only just *one* element out of ten, and with
+      time still ticking, who knows if you''ll even find the rest of them in time.'
+    - 'Female Voice: Did you set the timer to go off as soon as our Pal walked in?!'
+    - 'Male Voice: Maybe I did, Maybe I didn''t, who can know for sure. But that
+      time''s running while they''re still standing. Hey Pal, we got you a freebie,
+      you''re on your own for finding the rest of the elements, good luck beating
+      this in time, if you can that is.'
+    - 'Female Voice: Time is of the essence, good luck!'
+  minLeft20Lv1:
+    sentences:
+    - "Male Voice: Hmm you\u2019ve got 20 minutes. Here I thought you could set a
+      new record, probably still couldn't beat my time though."
+  minLeft10Lv1:
+    sentences:
+    - "Male Voice: You\u2019ve got 10 minutes, if you\u2019re quick enough, you could
+      at look at second room!"
+  minLeft5Lv1:
+    sentences:
+    - 'Male Voice: Hmm that''s not good, you only got 5 minutes and a dream to beat
+      this room and the next one.'
+  minLeft0Lv1:
+    sentences:
+    - 'Female Voice: TIMES UP! Sorry to say, but unfortunately you failed to escape
+      in time to become our new Pal. Tsk I do hope you return someday to give it
+      another shot.'
+  minLeft20Lv2:
+    sentences:
+    - 'Male Voice: Oh you were so close to making news on how fast you cleared this
+      escape room, tsk what a shame.'
+  minLeft10Lv2:
+    sentences:
+    - 'Male Voice: 10 Minutes!! Tick Tock think harder, think faster!'
+  minLeft5Lv2:
+    sentences:
+    - "Female Voice: 5 Minutes left!! You\u2019re in the final stretch! Go Go Go!"
+  minLeft0Lv2:
+    sentences:
+    - "Female Voice: TIME\u2019S UP!!! Right at the finish line too, you may not
+      be our newest pal now, but you\u2019ll get it for sure the next time!"
+  lv1Clear:
+    sentences:
+    - 'Female Voice: You did it!! With some time to your name still, we can move
+      onto the second room, please open that door while I explain your next task.'
+    - "Female Voice: Great, you made it to the next room. In the second room, you\u2019ll
+      see a large table in front of you and in it, a model of an atom with the name
+      next to it. You must be able to make it into an ion by adjusting the number
+      of electrons the model has. Once you correctly make an ion, the next one will
+      be ready for you to make immediately, it is as simple as it sounds. If you
+      make a mistake with the current atom, hit that button next to the model to
+      reset it back to how it was originally."
+    - "Male Voice: Get to it, you\u2019re still on the clock you know! "
+  lv2Clear:
+    sentences:
+    - "Female Voice: Congratulations!! You\u2019ve successfully completed our escape
+      room! You are now officially our new Pal!! We\u2019re happy to have you, especially
+      considering your knowledge regarding chemistry!"
+  normalClear:
+    sentences:
+    - 'Female Voice: Although you passed everything, there were some hidden feats
+      that we hoped that you could uncover.'
+    - "Female Voice: They would have come with cool badges too, maybe come back another
+      time to try and earn them!\u201D "
+  quickClear:
+    sentences:
+    - "Male Voice: I must say I\u2019m very impressed at the speed at which you did
+      all of this, although that speed did mean you missed out on a secret or two
+      within the first room."
+    - "Male Voice: You still passed nonetheless, and earned a neat badge as well!\u201D "
+  normalClearHidden:
+    sentences:
+    - "Female Voice: I would also like to say I\u2019m proud that you managed to
+      find the hidden elements within the first room, good job on that, you\u2019ve
+      earned a badge for finding them!"
+  quickClearHidden:
+    sentences:
+    - "Female Voice: I would like to take this time to acknowledge your accomplishments.
+      You identified the two hidden elements within the first room, while also escaping
+      both rooms within 10 minutes?! Well done you earned these badges commemorating
+      your accomplishments!\u201D "
+  findFlourine:
+    sentences:
+    - "Male Voice: Aahh, got a knack for finding secrets yea? Don\u2019t waste too
+      much time on identifying this now, you got the main course to worry about."
+  findClorine:
+    sentences:
+    - "Male Voice: You might be thinking to yourself \u201COh what is this doing
+      here?\u201D don\u2019t worry about it, it\u2019s nothing, really, nothing at
+      allll."
+  findBothHidden:
+    sentences:
+    - 'Female Voice: Congratulations! You found two of our hidden elements within
+      this room! For that you earn yourself a nice reward once this is all over,
+      don''t get distracted though keep going!'
+  flourineIdentified:
+    sentences:
+    - "Female Voice: Oohh look at you, my new Pal in the making!\r"
+  chlorineIdenified:
+    sentences:
+    - 'Male Voice: Well, you got me, found one of my secrets for this room. You are
+      smarter than I thought.'
+  missdentified:
+    sentences:
+    - No hints for my little secrets, sorry!
+--- !u!114 &26978493860125840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371852404225350655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225a9f186ac9f19408c905995aa95395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subPanel: {fileID: 0}
+  subtileText: {fileID: 0}
+--- !u!1 &6379952123954829066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5876294108942066024}
+  - component: {fileID: 5544942476618262521}
+  - component: {fileID: 8348509220578447387}
+  m_Layer: 0
+  m_Name: Notebook Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5876294108942066024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379952123954829066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5852534271582147715}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5544942476618262521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379952123954829066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c743d075e273be44a9a6cea32e5c945c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notebook: {fileID: 0}
+  page1: {fileID: 0}
+  page2: {fileID: 0}
+  page3: {fileID: 0}
+  noteOpen: 0
+  notebookButton: 113
+--- !u!114 &8348509220578447387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379952123954829066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bb6a8becf93674cbc6fb6bb2b9151f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  newColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &7337324863355531784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5852534271582147715}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5852534271582147715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7337324863355531784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5876294108942066024}
+  - {fileID: 6831361120999800943}
+  - {fileID: 3413566135932923590}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
