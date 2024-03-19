@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1076655410974671165
+--- !u!1 &2503362667586004814
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,56 +8,74 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6831361120999800943}
-  - component: {fileID: 7191131367951632336}
+  - component: {fileID: 6268154799215096818}
+  - component: {fileID: 1599545134116659492}
+  - component: {fileID: 3722020138513001924}
   m_Layer: 0
-  m_Name: Timer Manager
+  m_Name: Notebook Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6831361120999800943
+--- !u!4 &6268154799215096818
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076655410974671165}
+  m_GameObject: {fileID: 2503362667586004814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5852534271582147715}
+  m_Father: {fileID: 4461065289821873074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7191131367951632336
+--- !u!114 &1599545134116659492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076655410974671165}
+  m_GameObject: {fileID: 2503362667586004814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1098c3bbeb1ac54a8d106c2a5b31f69, type: 3}
+  m_Script: {fileID: 11500000, guid: c743d075e273be44a9a6cea32e5c945c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
-  startTime: 1800
-  time: 0
-  openingStartTime: 5
-  openingTime: 0
-  subtitleTriggers: {fileID: 228261589672655358}
-  openingCheck: 0
-  time20check: 0
-  time10check: 0
-  time5check: 0
-  enterLv1: 0
-  level1Clear: 0
-  timesUpCheck: 0
---- !u!1 &4371852404225350655
+  notebook: {fileID: 0}
+  page1: {fileID: 0}
+  page2: {fileID: 0}
+  page3: {fileID: 0}
+  noteOpen: 0
+  notebookButton: 113
+--- !u!114 &3722020138513001924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2503362667586004814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bb6a8becf93674cbc6fb6bb2b9151f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  newColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &4375158148516207316
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,10 +83,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3413566135932923590}
-  - component: {fileID: 8789239100565564494}
-  - component: {fileID: 228261589672655358}
-  - component: {fileID: 26978493860125840}
+  - component: {fileID: 2185247505310189299}
+  - component: {fileID: 908229965441883117}
+  - component: {fileID: 6755565095851906503}
+  - component: {fileID: 1241981388105635826}
   m_Layer: 5
   m_Name: Subtitles Manager
   m_TagString: Untagged
@@ -76,19 +94,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &3413566135932923590
+--- !u!224 &2185247505310189299
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371852404225350655}
+  m_GameObject: {fileID: 4375158148516207316}
   m_LocalRotation: {x: -0, y: 0.8433914, z: -0, w: 0.5372997}
   m_LocalPosition: {x: 0, y: 0, z: 9.753323}
   m_LocalScale: {x: 0.0023025316, y: 0.0023025314, z: 0.0023025316}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5852534271582147715}
+  m_Father: {fileID: 4461065289821873074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -96,13 +114,13 @@ RectTransform:
   m_AnchoredPosition: {x: 5.494975, y: 3.0857306}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8789239100565564494
+--- !u!114 &908229965441883117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371852404225350655}
+  m_GameObject: {fileID: 4375158148516207316}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dacfd6683b30bfe46b17452f135018b0, type: 3}
@@ -111,19 +129,19 @@ MonoBehaviour:
   sentenceText: {fileID: 0}
   textTypeSpeed: 0.05
   sentencePause: 1
---- !u!114 &228261589672655358
+--- !u!114 &6755565095851906503
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371852404225350655}
+  m_GameObject: {fileID: 4375158148516207316}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 174ef47dc2043b24099525e77e3dbae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 7191131367951632336}
+  timer: {fileID: 283265370463316270}
   flourineCheck: 0
   chlorineCheck: 0
   checkboth: 0
@@ -289,13 +307,13 @@ MonoBehaviour:
   missdentified:
     sentences:
     - No hints for my little secrets, sorry!
---- !u!114 &26978493860125840
+--- !u!114 &1241981388105635826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371852404225350655}
+  m_GameObject: {fileID: 4375158148516207316}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 225a9f186ac9f19408c905995aa95395, type: 3}
@@ -303,7 +321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subPanel: {fileID: 0}
   subtileText: {fileID: 0}
---- !u!1 &6379952123954829066
+--- !u!1 &6283281855819572524
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,74 +329,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5876294108942066024}
-  - component: {fileID: 5544942476618262521}
-  - component: {fileID: 8348509220578447387}
+  - component: {fileID: 4618374474131381694}
+  - component: {fileID: 283265370463316270}
   m_Layer: 0
-  m_Name: Notebook Manager
+  m_Name: Timer Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5876294108942066024
+--- !u!4 &4618374474131381694
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379952123954829066}
+  m_GameObject: {fileID: 6283281855819572524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5852534271582147715}
+  m_Father: {fileID: 4461065289821873074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5544942476618262521
+--- !u!114 &283265370463316270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379952123954829066}
+  m_GameObject: {fileID: 6283281855819572524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c743d075e273be44a9a6cea32e5c945c, type: 3}
+  m_Script: {fileID: 11500000, guid: d1098c3bbeb1ac54a8d106c2a5b31f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notebook: {fileID: 0}
-  page1: {fileID: 0}
-  page2: {fileID: 0}
-  page3: {fileID: 0}
-  noteOpen: 0
-  notebookButton: 113
---- !u!114 &8348509220578447387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379952123954829066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38bb6a8becf93674cbc6fb6bb2b9151f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elements:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  newColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &7337324863355531784
+  timeText: {fileID: 0}
+  startTime: 1800
+  time: 0
+  openingStartTime: 5
+  openingTime: 0
+  subtitleTriggers: {fileID: 6755565095851906503}
+  openingCheck: 0
+  time20check: 0
+  time10check: 0
+  time5check: 0
+  enterLv1: 0
+  level1Clear: 0
+  timesUpCheck: 0
+--- !u!1 &8198816648779581658
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,7 +386,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5852534271582147715}
+  - component: {fileID: 4600632262479926771}
+  m_Layer: 0
+  m_Name: Pause Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4600632262479926771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8198816648779581658}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4461065289821873074}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8696054582927597938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4461065289821873074}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -394,21 +425,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5852534271582147715
+--- !u!4 &4461065289821873074
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7337324863355531784}
+  m_GameObject: {fileID: 8696054582927597938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5876294108942066024}
-  - {fileID: 6831361120999800943}
-  - {fileID: 3413566135932923590}
+  - {fileID: 6268154799215096818}
+  - {fileID: 4618374474131381694}
+  - {fileID: 2185247505310189299}
+  - {fileID: 4600632262479926771}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
